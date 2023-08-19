@@ -25,3 +25,43 @@ If you are developing a production application, we recommend updating the config
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## **Core**
+
+- **[React (Version 18)](https://react.dev/learn)**
+- **[Vite](https://vitejs.dev/guide/)**
+- **[React Query (Version 4)](https://tanstack.com/query/v4/docs/react/overview)**
+- [**React Hook Form (Version 7)**](https://react-hook-form.com/docs)
+- [**Zustand**](https://docs.pmnd.rs/zustand/getting-started/introduction)
+
+## **UI & styling**
+
+- [**Tailwindcss**](https://tailwindcss.com/docs/installation)
+- [**Radix-UI**](https://www.radix-ui.com/themes/docs/overview/getting-started)
+- [**Shadcn**](https://ui.shadcn.com/docs)
+
+## **Static type checking & linting**
+
+- [**Typescript**](https://www.typescriptlang.org/)
+- [**ESLint**](https://eslint.org/docs/latest/use/getting-started)
+- [**Prettier**](https://github.com/prettier/prettier)
+- [**Husky**](https://github.com/typicode/husky)
+- **[Commitlint](https://commitlint.js.org/#/)**
+
+## Others
+
+- [**class-variance-authority**](https://cva.style/docs/getting-started/installation)
+
+1. Install the "Tailwind CSS IntelliSense" Visual Studio Code extension
+2. Add the following to your settings.json(opens in a new tab):
+
+```jsx
+{
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
+}
+```
+
+- [**Storybook**](https://storybook.js.org/docs/react/get-started/install/)
