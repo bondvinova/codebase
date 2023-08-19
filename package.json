@@ -10,7 +10,13 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "types:check": "tsc --pretty -noEmit",
+    "lint:check": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "prettier:check": "prettier --check 'src/**/*.{ts,tsx,json}'",
+    "prettier:fix": "prettier --write 'src/**/*.{ts,tsx,json}'",
+    "all:check-format": "pnpm run lint:check && pnpm run prettier:check && pnpm run lint:fix && pnpm run prettier:fix"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
