@@ -4,10 +4,17 @@
 echo 'Styling, testing and building your project before committing'
 
 # Check Prettier standards
-pnpm run prettier:check ||
+# pnpm run prettier:check ||
+# (
+#     echo '🤢🤮🤢🤮 Its FOKING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
+#             Prettier Check Failed. Run pnpm run prettier:fix, add changes and try commit again.';
+#     false;
+# )
+
+pnpm run prettier:fix || 
 (
     echo '🤢🤮🤢🤮 Its FOKING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
-            Prettier Check Failed. Run pnpm run prettier:fix, add changes and try commit again.';
+            Prettier Check Failed. Run pnpm run prettier:check, add changes and try commit again.';
     false;
 )
 
