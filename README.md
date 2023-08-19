@@ -65,3 +65,20 @@ If you are developing a production application, we recommend updating the config
 ```
 
 - [**Storybook**](https://storybook.js.org/docs/react/get-started/install/)
+
+## **Repository setup**
+
+- [**pnpm**](https://pnpm.io/installation)
+
+1. `pnpm install` to install all dependencies
+2. `pnpm run dev` to start development server
+3. `pnpm run build` to compile for production
+4. `pnpm run storybook` to open storybook on local
+
+## **Source Version Control**
+
+- [**Refer here**](https://github.com/dwarvesf/playbook/blob/master/engineering/git.md)
+
+## Coding Convention
+
+- [**Refer here**](https://github.com/dwarvesf/playbook/blob/master/engineering/frontend/code-style.md)
