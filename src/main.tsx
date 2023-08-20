@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 
-import App from '@/containers/app';
+import Spinner from '@/components/spinner';
 
 import '@/styles/global.css';
 
+const App = lazy(() => import('@/containers/app'));
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Suspense fallback={<Spinner />}>
+        <App />
+      </Suspense>
+    </BrowserRouter>
   </React.StrictMode>,
 );
