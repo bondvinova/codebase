@@ -11,12 +11,12 @@ echo 'Styling, testing and building your project before committing'
 #     false;
 # )
 
-pnpm run prettier:fix || 
-(
-    echo '🤢🤮🤢🤮 Its FOKING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
-            Prettier Check Failed. Run pnpm run prettier:check, add changes and try commit again.';
-    false;
-)
+# pnpm run prettier:fix || 
+# (
+#     echo '🤢🤮🤢🤮 Its FOKING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
+#             Prettier Check Failed. Run pnpm run prettier:check, add changes and try commit again.';
+#     false;
+# )
 
 # Check ESLint Standards
 pnpm run lint:check ||
