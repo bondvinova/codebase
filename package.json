@@ -14,8 +14,8 @@
     "types:check": "tsc --pretty -noEmit",
     "lint:check": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
-    "prettier:check": "prettier --check 'src/**/*.{ts,tsx,json}'",
-    "prettier:fix": "prettier --write 'src/**/*.{ts,tsx,json}'",
+    "prettier:check": "prettier . --check 'src/**/*.{ts,tsx,json}'",
+    "prettier:fix": "prettier . --write 'src/**/*.{ts,tsx,json}'",
     "all:check-format": "pnpm run lint:check && pnpm run prettier:check && pnpm run lint:fix && pnpm run prettier:fix"
   },
   "dependencies": {
@@ -24,6 +24,8 @@
     "clsx": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "sass": "^1.66.1",
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {

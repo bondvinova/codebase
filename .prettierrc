@@ -2,6 +2,7 @@
   "tabWidth": 2,
   "singleQuote": true,
   "printWidth": 80,
+  "endOfLine": "lf",
   "arrowParens": "always",
   "importOrder": [
     "^(react/(.*)$)|^(react$)",
@@ -10,6 +11,8 @@
     "",
     "^types$",
     "^@/(.*)$",
+    "^@/types/(.*)$",
+    "^@/router/(.*)$",
     "^@/lib/utils",
     "^@/assets/(.*)$",
     "^@/components/(.*)$",
@@ -18,8 +21,5 @@
     "^[./]"
   ],
   "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
-  "plugins": [
-    "@ianvs/prettier-plugin-sort-imports",
-    "prettier-plugin-tailwindcss"
-  ]
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"]
 }

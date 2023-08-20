@@ -1,11 +1,13 @@
-import Button from '@/components/button';
-import { cn } from '@/lib/utils';
+import { Suspense } from 'react';
+
+// ** Router Import **
+import Router from '@/router/Router';
 
 const App = () => {
   return (
-    <div className={cn('p-10')}>
-      <Button>Download</Button>
-    </div>
+    <Suspense fallback={null}>
+      <Router />
+    </Suspense>
   );
 };
 
