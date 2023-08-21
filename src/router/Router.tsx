@@ -4,6 +4,7 @@ import { Navigate, useRoutes } from 'react-router-dom';
 
 // ** Layouts **
 import BlankLayout from '@/layouts/BlankLayout';
+import VerticalLayout from '@/layouts/VerticalLayout';
 import { ROUTES_NAME } from '@/router/constant';
 import { getRoutes } from '@/router/routes';
 
@@ -27,7 +28,7 @@ const Router = () => {
     },
     {
       path: ROUTES_NAME.DASHBOARD,
-      element: <BlankLayout />,
+      element: <VerticalLayout />,
       children: [{ path: ROUTES_NAME.DASHBOARD, element: <Dashboard /> }],
     },
     {

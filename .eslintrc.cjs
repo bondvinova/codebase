@@ -9,9 +9,15 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  // plugins: ['react-refresh'],
   rules: {
     'no-console': 'warn',
     '@typescript-eslint/no-unused-vars': 'warn',
+  },
+  settings: {
+    tailwindcss: {
+      callees: ['cn'],
+      config: 'tailwind.config.js',
+    },
   },
 };
