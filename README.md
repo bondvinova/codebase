@@ -82,3 +82,39 @@ If you are developing a production application, we recommend updating the config
 ## Coding Convention
 
 - [**Refer here**](https://github.com/dwarvesf/playbook/blob/master/engineering/frontend/code-style.md)
+
+## Folder Structure
+
+<!-- prettier-ignore -->
+```jsx
+src
+|-- api
+|-- assets
+    |-- icons
+        |-- index.tsx
+    |-- images
+|-- components
+    |-- button
+        |-- index.tsx
+        |-- Button.stories.tsx
+    |-- paragraph
+        |-- index.tsx
+        |-- Paragraph.stories.tsx
+|-- hooks
+|-- layouts
+    |-- BlankLayout.tsx
+    |-- VerticalLayout.tsx
+|-- lib
+    |-- utils.tsx
+|-- router
+    |-- routes
+        |-- index.tsx
+        |-- Authentication.tsx
+        |-- Pages.tsx
+    |-- Router.tsx
+    |-- constant.tsx
+|-- stories
+|-- styles
+    |-- global.css
+|-- types
+```
